@@ -1,0 +1,1 @@
+{"version":3,"file":"voiture.d.ts","sourceRoot":"","sources":["voiture.ts"],"names":[],"mappings":"AAAA,qBAAa,OAAO;IACJ,OAAO,CAAC,OAAO;gBAAP,OAAO,EAAG,MAAM;IAGpC,UAAU,IAAK,MAAM;IAGrB,UAAU,CAAC,OAAO,EAAG,MAAM,GAAI,IAAI;IAInC,QAAQ,IAAK,MAAM;CAGtB"}
