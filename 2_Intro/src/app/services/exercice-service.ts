@@ -20,11 +20,11 @@ export class ExerciceService {
     if (exercice) {
       exercice.submitted = !exercice.submitted;
       this.exercicesData.set([...this.exercicesData()]);
+      console.log('État après toggle:', this.exercicesData());
     }
   }
 
   getAll() {
     return this.exercices();
   }
-  
 }

@@ -27,7 +27,7 @@ export class App implements OnInit {
 
   constructor() {
     this.messageService.fillWithExemples();
-    // setTimeout(() => {
+    // setTimeout(() => { 
     //   this.title.set('Bonjour les gens');
     // }, 3000);
   }
@@ -42,7 +42,6 @@ export class App implements OnInit {
   }
 
   onToggle(id: number): void {
-    console.log('App.ts onToggle', id);
     this.exerciceService.toggle(id);
   }
 }
