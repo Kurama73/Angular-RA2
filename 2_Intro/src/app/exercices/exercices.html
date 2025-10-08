@@ -1,0 +1,9 @@
+<h2>Vos exercices</h2>
+<ul>
+  @for (exercice of exercices(); track exercice.id) {
+    <li>
+      Exercice {{ exercice.id }} : {{ exercice.title | reverseSwapFun }} - Date de rendu : {{ exercice.dueDate | date: 'dd/MM/yyyy' }} -
+      Statut : <input type="checkbox" [checked]="exercice.submitted" (change)="toggle(exercice.id)" />
+    </li>
+  }
+</ul>

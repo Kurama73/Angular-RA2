@@ -1,0 +1,12 @@
+<!-- <p [class]="category">Ceci est une info</p> -->
+<main>
+  <button (click)="onAddAlerte()">Add alerte</button>
+  
+  @for (alerte of alertes(); track $index) {
+    <p [class]="alerte.category">
+      {{ alerte.id | number: '1.2-2' }}: {{ alerte.message | titlecase }}
+
+      <button aria-label="Close" (click)="removeAlerte(alerte.id)">&times;</button>
+    </p>
+  }
+</main>

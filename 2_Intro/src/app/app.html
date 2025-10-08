@@ -1,0 +1,11 @@
+<h1>Hello, {{ title() }}</h1>
+
+<!-- Boucle for avec index et count -->
+<!-- <ul>
+    @for (item of ['banana', 'apple', 'orange']; track $index) {
+      <li>Fruit n° {{ $index }}/{{ $count }}: {{ item }}</li>
+    }
+  </ul> -->
+
+<iut-alert [alertes]="alertesData()" (alerteRemoved)="onAlerteRemoved($event)" (addAlerte)="onAddAlerte()" />
+<iut-exercices [exercices]="exercicesData()" (submit)="onToggle($event.id)" />
